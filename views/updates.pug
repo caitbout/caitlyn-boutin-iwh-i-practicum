@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title= title
+	body
+		h1 Add a New Coffee Order
+
+		a(href="/") Return to the homepage
+
+		form(action="/update-coffee" method="POST")
+			div
+				label(for="name") Kind of Coffee
+				input(type="text" name="name" required)
+
+			div
+				label(for="flavor") Preferred Flavor
+				input(type="text" name="flavor")
+
+			div
+				label(for="milk") Milk Choice
+				input(type="text" name="milk")
+			button(type="submit") Order Coffee
