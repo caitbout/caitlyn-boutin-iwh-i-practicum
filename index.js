@@ -34,7 +34,7 @@ app.post("/update-cobj", (req, res) => {
 
 	// where HubSpot API call will go
 
-	red.redirect("/");
+	res.redirect("/");
 });
 
 /** 
