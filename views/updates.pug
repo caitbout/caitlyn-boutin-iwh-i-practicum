@@ -14,9 +14,18 @@ html
 
 			div
 				label(for="flavor") Preferred Flavor
-				input(type="text" name="flavor")
+				select(name="flavor" id="flavor")
+					option(value="Vanilla") Vanilla
+					option(value="Caramel") Caramel
+					option(value="Mocha") Mocha
+					option(value="Lavendar") Lavendar
 
 			div
 				label(for="milk") Milk Choice
-				input(type="text" name="milk")
+				select(name="milk" id="milk")
+					option(value="whole") Whole Milk
+					option(value="oat") Oat Milk
+					option(value="soy") Soy Milk
+					option(value="almond") Almond Milk
+					option(value="skim") Skim Milk
 			button(type="submit") Order Coffee
