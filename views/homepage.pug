@@ -1,0 +1,18 @@
+doctype html
+html
+	h1= title
+
+	a(href="/update-cobj") Order a coffee
+
+	table(border="1" cellpadding="8")
+		thead
+			tr
+				th Name
+				th Flavor
+				th Milk
+		tbody
+			each coffee in order
+				tr
+					td= coffee.properties.name
+					td= coffee.properties.flavor
+					td= coffee.properties.milk

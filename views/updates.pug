@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title= title
+	body
+		h1 Add a New Coffee Order
+
+		a(href="/") Return to the homepage
+
+		form(action="/update-cobj" method="POST")
+			div
+				label(for="name") Kind of Coffee
+				input(type="text" name="name" required)
+
+			div
+				label(for="flavor") Preferred Flavor
+				select(name="flavor" id="flavor")
+					option(value="Vanilla") Vanilla
+					option(value="Caramel") Caramel
+					option(value="Mocha") Mocha
+					option(value="Lavendar") Lavendar
+
+			div
+				label(for="milk") Milk Choice
+				select(name="milk" id="milk")
+					option(value="whole") Whole Milk
+					option(value="oat") Oat Milk
+					option(value="soy") Soy Milk
+					option(value="almond") Almond Milk
+					option(value="skim") Skim Milk
+			button(type="submit") Order Coffee
